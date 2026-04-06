@@ -1,13 +1,17 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table
+@Table(name = "users")
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 
 public class User {
 
